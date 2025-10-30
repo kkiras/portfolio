@@ -25,7 +25,7 @@ export default function About() {
             
             <div className={styles.inner}>
                 <div className={styles.flex}>
-                    <img id="about-avatar" className={styles.avatar} src="/src/assets/avatar.jpg" alt="" />
+                    <img id="about-avatar" className={styles.avatar} src="../../assets/avatar.jpg" alt="" />
                     
                     <div className={styles.basics}>
                         {basics.map((item, index) => {

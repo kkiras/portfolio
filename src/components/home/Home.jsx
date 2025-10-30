@@ -1,5 +1,4 @@
 import avatar from "../../assets/avatar.jpg"
-// import GithubIcon from '/src/assets/link-github.svg'
 
 import DragableBg from "./DrabableBg";
 import styles from "./Home.module.css"
