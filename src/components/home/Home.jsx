@@ -1,4 +1,4 @@
-import avatar from '/src/assets/avatar.jpg'
+import avatar from "../../assets/avatar.jpg"
 // import GithubIcon from '/src/assets/link-github.svg'
 
 import DragableBg from "./DrabableBg";

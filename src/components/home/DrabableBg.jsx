@@ -31,9 +31,9 @@ export default function DragableBg() {
   }, []);
 
   const icons = {
-    cherry: "/src/assets/floating-cherry.svg",
-    bug: "/src/assets/floating-bug.svg",
-    leaf: "/src/assets/floating-leaf.svg",
+    cherry: "../../assets/floating-cherry.svg",
+    bug: "../../assets/floating-bug.svg",
+    leaf: "../../assets/floating-leaf.svg",
   };
 
   function randNonZero(min, max) {
