@@ -6,7 +6,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import BackgroundFloating from "./BackgroundFloating";
 import cherry from "../../assets/floating-cherry.svg";
 import bug from "../../assets/floating-bug.svg";
-import leaf from "../../assets/floating-leaf.svg"
+import leaf from "../../assets/floating-leaf.svg";
 
 export default function DragableBg() {
   const constraintsRef = useRef(null);
