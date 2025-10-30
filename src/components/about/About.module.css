@@ -1,0 +1,163 @@
+.container{
+    width: 100%;
+    /* Better mobile viewport height */
+    min-height: 100svh;
+    height: 100vh;
+    /* Start at the shared seam color and fade to sub */
+    /* Blend with Home on top (via --bg-seam) and fade to Skills' bg-main at bottom */
+    background: linear-gradient(
+      to bottom,
+      /* Top blend: seam -> sub */
+      var(--bg-seam) 0,
+      var(--bg-sub) var(--section-blend),
+      /* Middle: keep sub color */
+      var(--bg-sub) calc(100% - var(--section-blend)),
+      /* Bottom blend: sub -> main to match Skills */
+      var(--bg-main) 100%
+    );
+    padding-top: clamp(32px, 5vw, 48px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container > h1{
+    margin: 0;
+    margin-bottom: clamp(28px, 6vw, 56px);
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--card-fg-sub);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: clamp(16px, 4vw, 32px);
+    align-items: center;
+    margin-bottom: clamp(24px, 6vw, 48px);
+    padding: 0 16px;
+}
+
+.avatar{
+    border-radius: 9999px;
+    width: clamp(140px, 26vw, 240px);
+    height: clamp(140px, 26vw, 240px);
+}
+
+.label{
+    font-size: clamp(0.95rem, 2.2vw, 1.125rem);
+    color: var(--accent-sub);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 4px ;
+    font-weight: 700;
+}
+
+.value{
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: var(--card-fg-sub);
+    margin: 0;
+}
+
+.basics > div{
+    margin-top: clamp(10px, 2.4vw, 16px);
+    margin-bottom: clamp(10px, 2.4vw, 16px);
+}
+
+.description > p{
+    color: var(--card-fg-sub);
+    margin: auto;
+    line-height: 1.6;
+    padding: 0 16px;
+    /* Mobile-first: near full width, cap readable line length */
+    width: 90%;
+    max-width: 720px;
+}
+
+.description > p > span{
+    color: var(--accent-sub);
+    font-weight: 700;
+
+}
+
+/* New wrapper that contains .flex and .description */
+.inner {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  position: absolute;
+  background-color: var(--accent-sub);
+  color: var(--primary-fg-sub);
+  padding: 10px 18px;
+  border-radius: 12px;
+  bottom: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn:hover {
+  background-color: var(--primary-sub);
+}
+
+/* Center the inner block on iPad and larger */
+@media (min-width: 640px) {
+  .inner {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    width: 80%;
+    max-width: 1100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* Small screens: keep row layout, shrink avatar */
+@media (max-width: 639.98px) {
+  .container { padding-top: 24px; }
+  .flex{
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+  }
+  .avatar{
+    width: clamp(88px, 26vw, 120px);
+    height: clamp(88px, 26vw, 120px);
+  }
+  .basics > div{
+    margin-top: clamp(6px, 2vw, 10px);
+    margin-bottom: clamp(6px, 2vw, 10px);
+  }
+  .label{ font-size: clamp(0.9rem, 3.2vw, 1rem); }
+  .value{ font-size: clamp(0.85rem, 3vw, 0.95rem); }
+}
+
+/* Tablet (640–1024px): center content vertically to reduce empty space */
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex{ padding: 0 24px; }
+  .description > p{ width: 80%; max-width: 820px; }
+  .container > h1{ margin-bottom: 32px; }
+}
+
+/* Large screens (≥1024px): keep 60% width like original */
+@media (min-width: 1024px) {
+  .description > p{ width: 80%; max-width: none; }
+}

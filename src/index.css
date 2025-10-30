@@ -1,0 +1,120 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600&display=swap');
+:root {
+
+  font-family: 'Nunito', sans-serif;
+
+  --font-heading: 'Nunito', sans-serif;
+
+  /* color-scheme: light dark;
+  color: var(--fg);
+  background-color: #242424; */
+
+  --bg-main: #FAF0E6;
+  --fg-main: #5C4033;
+  --primary-main: #A3B8B1;
+  --primary-fg-main: #FFFDF6;
+  --accent-main: #87a8a8;
+  --card-main: #A3B8B1;
+  --card-fg-main: #FFFDF6;
+  /* Shared blend between sections */
+  --bg-seam: color-mix(in srgb, var(--bg-main) 50%, var(--bg-sub) 50%);
+  --bg-seam-reverse: color-mix(in srgb, var(--bg-sub) 50%, var(--bg-main) 50%);
+  /* Height of the blending area between sections */
+  --section-blend: clamp(48px, 10vh, 140px);
+
+  --bg-sub: #E9E0D3;
+  --fg-sub: #3b352b;
+  --card-sub: #E9E0D3;
+  --card-fg-sub: #3b352b;
+  --popover-sub: #E9E0D3;
+  --popover-fg-sub: #3b352b;
+  --primary-sub: #7f967e;
+  --primary-fg-sub: #e9e0d3;
+  /* --secondary-sub: #7f967e;
+  --secondary-fg-sub: #fff; */
+  /* --muted-sub: #7f967e;
+  --muted-fg-sub: #fff; */
+  --accent-sub: #567f6d;
+  --accent-fg-sub: #fff;
+  --destructive-sub: #c1564c; /* #FF686B */
+  --destructive-fg-sub: #872400;
+  --border-sub: #7f967e;
+  --input-sub: ;
+  --ring-sub: ;
+}
+
+.dark,
+[data-theme="dark"] {
+  --bg-main: #382449;
+  --fg-main: #b0a8b9;
+  --primary-main: #694e7e;
+  --primary-fg-main: #c0b6cc;
+  --accent-main: #896c9f;
+  --card-main: #4e3366;
+  --card-fg-main: #fff6ff;
+  --border-main: #613b7d;
+  --secondary-main: #997ab3;
+  --secondary-fg-main: #382449;
+
+  --bg-sub: #432b57;
+  --fg-sub: #fee9ff;
+  --card-sub: #382449;
+  --card-fg-sub: #b2a8b8;
+  --popover-sub: #382449;
+  --popover-fg-sub: #b2a8b8;
+  --primary-sub: #62517a;
+  --primary-fg-sub: #fee9ff;
+  --accent-sub: #745989;
+  --accent-fg-sub: #fee9ff;
+  --destructive-sub: #c1564c;
+  --destructive-fg-sub: #872400;
+  --border-sub: #21152b;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+.dark,
+[data-theme="dark"] {
+  --bg: #0b0f14;
+  --text: #e5e7eb;
+}
+
+html {
+  
+}
+
+::-webkit-scrollbar {
+  width: 12px;            
+    
+}
+
+::-webkit-scrollbar-track {
+  background: var(--fg-sub);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-sub); 
+  border-radius: 6px;
+  border: 2px solid var(--fg-sub);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-sub);
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+
+

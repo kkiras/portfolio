@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: var(--card-sub);
+  width: 416px;
+  height: fit-content;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 24px;
+  border: 2px solid color-mix(in srgb, var(--border-sub) 40%, transparent);
+  color: var(--card-fg-sub);
+}
+
+.card img {
+  margin-top: -10%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.card p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card .btnn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

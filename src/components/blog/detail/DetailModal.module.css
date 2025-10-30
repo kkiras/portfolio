@@ -1,0 +1,77 @@
+.detailOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.detailModal {
+  background: var(--card-main);
+  color: var(--card-fg-main);
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.detailDate {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.detailDate .icon {
+  margin-right: 6px;
+}
+
+.detailContent {
+  margin: 16px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--card-fg-main);
+}
+
+.detailTags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.detailTags .icon {
+  margin-right: 8px;
+  color: #999;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #eee;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #444;
+}

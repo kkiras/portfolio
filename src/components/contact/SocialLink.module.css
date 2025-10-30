@@ -1,0 +1,7 @@
+.iconContainer {
+    color: color-mix(in srgb, var(--fg-sub) 60%, transparent);
+}
+
+.iconContainer:hover {
+    color: color-mix(in srgb, var(--fg-sub) 90%, transparent);
+}

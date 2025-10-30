@@ -1,0 +1,16 @@
+.btn {
+  background-color: var(--primary-sub);
+  color: var(--primary-fg-sub);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 11px 1rem;
+  /* margin: 0 0.5rem ; */
+  width: 7.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover{
+  background-color: var(--accent-sub);
+}

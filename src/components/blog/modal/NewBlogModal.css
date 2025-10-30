@@ -1,0 +1,126 @@
+.blog-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.blog-modal {
+  width: 672px;
+  height: 560px;
+  /* background: var(--card-main); */
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  overflow-y: scroll;
+  /* color: #4e4637; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.blog-modal-content {
+  background: var(--card-main);
+  color: var(--card-fg-main);
+  padding: 32px;
+  border-radius: 24px;
+  width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.blog-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.blog-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.blog-form-group {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.blog-form-group input[type="text"],
+.blog-form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #313131;
+  background-color: #353535;
+  color: var(--primary-fg-main);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.blog-radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.blog-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.blog-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.blog-cancel-btn,
+.blog-publish-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.blog-cancel-btn {
+  background-color: var(--primary-main);
+  color: var(--primary-fg-main);
+}
+
+.blog-publish-btn {
+  background-color: var(--secondary-main);
+  border: 1px solid var(--border-main);
+  color: var(--secondary-fg-main);
+}

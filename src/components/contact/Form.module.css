@@ -1,0 +1,74 @@
+.input, .message{
+    box-sizing: border-box;
+    margin-top: 4px;
+    color: color-mix(in srgb, var(--fg-sub) 90%, transparent);
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid color-mix(in srgb, var(--fg-sub) 60%, transparent);
+    background: transparent;
+    outline: none;
+}
+
+.contactLabel{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: color-mix(in srgb, var(--fg-sub) 60%, transparent);
+}
+
+.input{
+    width: 100%;
+    height: 28px;
+}
+
+input:focus, .message:focus {
+  outline: none;              
+  border-bottom: 2px solid color-mix(in srgb, var(--fg-sub) 90%, transparent);
+}
+
+.inputGroup:focus-within .contactLabel {
+  color: color-mix(in srgb, var(--fg-sub) 90%, transparent);
+}
+
+.message{
+    width: 100%;
+    resize: none;
+    margin-bottom: 24px;
+    
+}
+
+.message::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--fg-sub) 70%, transparent);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitButton{
+  color: var(--bg-sub);
+  font-size: 14px;
+  padding: 10px 24px;
+  background: color-mix(in srgb, var(--fg-sub) 70%, transparent);
+  outline: none;
+  border-radius: 18px;
+  border: none;
+  align-self: center;
+}
+
+.submitButton:hover{
+  background: color-mix(in srgb, var(--fg-sub) 80%, transparent)
+}
+.submitButton:focus {
+  outline: none;  
+  box-shadow: none;
+}
+.submitButton:active {
+  transform: none;     
+  box-shadow: none;    
+}
+

@@ -1,0 +1,26 @@
+.container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    background: linear-gradient(
+      to bottom,
+      /* Top blend: seam -> sub */
+      var(--bg-seam) 0,
+      var(--bg-sub) var(--section-blend),
+      /* Middle: keep sub color */
+      var(--bg-sub) calc(100% - var(--section-blend)),
+      /* Bottom blend: sub -> main to match Skills */
+      var(--bg-main) 100%
+    );
+  align-items: center;
+  height: 100vh;
+}
+
+.sectionTitle {
+  font-size: 56px;
+  letter-spacing: 1.5px;
+  margin: 48px 0 0 0;
+  color: var(--fg-sub);
+  font-family: var(--font-heading);
+}

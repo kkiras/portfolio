@@ -1,0 +1,50 @@
+.container {
+    /* Better viewport height on mobile */
+    min-height: 100svh;
+    height: 100vh;
+    position: relative;
+    color: var(--fg-main);
+    background: linear-gradient(
+      to bottom,
+      var(--bg-main) 0,
+      var(--bg-main) calc(100% - var(--section-blend)),
+      var(--bg-seam) 100%
+    );
+}
+
+.child1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    z-index: 2;
+}
+
+.button{
+    background-color: var(--primary-main);
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: var(--primary-fg-main);
+}
+
+.button:hover{
+    background-color: var(--accent-main);
+}
+
+/* iPad / tablet: move child1 to bottom-left */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .child1 {
+    top: auto;
+    bottom: 6%;
+    left: 5%;
+    transform: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
