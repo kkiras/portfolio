@@ -4,6 +4,9 @@ import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import BackgroundFloating from "./BackgroundFloating";
+import cherry from "../../assets/floating-cherry.svg";
+import bug from "../../assets/floating-bug.svg";
+import leaf from "../../assets/floating-leaf.svg"
 
 export default function DragableBg() {
   const constraintsRef = useRef(null);
@@ -31,9 +34,9 @@ export default function DragableBg() {
   }, []);
 
   const icons = {
-    cherry: "../../assets/floating-cherry.svg",
-    bug: "../../assets/floating-bug.svg",
-    leaf: "../../assets/floating-leaf.svg",
+    cherry,
+    bug,
+    leaf
   };
 
   function randNonZero(min, max) {

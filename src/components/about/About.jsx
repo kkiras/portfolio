@@ -1,4 +1,4 @@
-
+import avatar from "../../assets/avatar.jpg"
 import styles from "./About.module.css"
 
 export default function About() {
@@ -25,7 +25,7 @@ export default function About() {
             
             <div className={styles.inner}>
                 <div className={styles.flex}>
-                    <img id="about-avatar" className={styles.avatar} src="../../assets/avatar.jpg" alt="" />
+                    <img id="about-avatar" className={styles.avatar} src={avatar} alt="" />
                     
                     <div className={styles.basics}>
                         {basics.map((item, index) => {
